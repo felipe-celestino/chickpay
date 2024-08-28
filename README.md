@@ -1,4 +1,1 @@
-Name: ChickPay
-Version: 1.0
-NODE: v20.17.0
-JAVA: v22.0.2
+Name: ChickPay - Version: v1.0 - Node: v20.17.0 - Java: v22.0.2 - Android: v8.0
