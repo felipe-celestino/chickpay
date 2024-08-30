@@ -40,9 +40,9 @@ class MainActivity : ComponentActivity() {
                             HomeScreen(navController)
                         }
                         composable(route = "Payment") {
-                            PaymentScreen()
+                            PaymentScreen(navController)
                         }
-                        composable(route = "Manutencao") {
+                        composable(route = "Maintenance") {
                             MaintenanceScreen(navController)
                         }
                     }

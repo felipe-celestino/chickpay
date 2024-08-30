@@ -110,7 +110,7 @@ fun HomeScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.Center
             ) {
                 Button(
-                    onClick = {navController.navigate("Manutencao")},
+                    onClick = {navController.navigate("Maintenance")},
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(48.dp),
@@ -177,7 +177,7 @@ fun HomeScreen(navController: NavController) {
                         ) {
                             Button(
                                 onClick = {
-                                    navController.navigate("Manutencao")
+                                    navController.navigate("Payment")
                                 },
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
@@ -194,7 +194,7 @@ fun HomeScreen(navController: NavController) {
                             Spacer(modifier = Modifier.height(8.dp))
                             Text(
                                 modifier = Modifier.width(100.dp),
-                                text = "Débiton\n automático",
+                                text = "Débito\n automático",
                                 textAlign = TextAlign.Center,
                                 color = Color.White,
                             )
@@ -203,7 +203,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Payment")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -228,7 +228,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Payment")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -259,7 +259,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Payment")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -284,7 +284,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Maintenance")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -310,7 +310,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Maintenance")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -373,7 +373,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Maintenance")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -398,7 +398,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Maintenance")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
@@ -423,7 +423,7 @@ fun HomeScreen(navController: NavController) {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Button(
-                                onClick = {navController.navigate("Manutencao")},
+                                onClick = {navController.navigate("Maintenance")},
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                                 shape = RoundedCornerShape(30.dp),
                                 modifier = Modifier
