@@ -1,7 +1,7 @@
 package br.com.fiap.chickpay
 
 import CadastroScreen
-import HomeScreen
+import br.com.fiap.chickpay.screens.HomeScreen
 import LoginScreen
 import MaintenanceScreen
 import PaymentScreen

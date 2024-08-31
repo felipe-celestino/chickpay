@@ -4,17 +4,24 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -44,14 +51,23 @@ fun PaymentScreen(navController: NavController) {
             )
     ) {
         Spacer(modifier = Modifier.height(6.dp))
-        Text(
-            modifier = Modifier.fillMaxWidth(),
-            text = "Pagamento",
-            fontSize = 30.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Black,
-            textAlign = TextAlign.Center
-        )
+        Row (verticalAlignment = Alignment.CenterVertically) {
+            Button(onClick = {navController.navigate("Home")},colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent)) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                    contentDescription = null,
+                    tint = Color.Black
+                )
+            }
+            Text(
+                modifier = Modifier.fillMaxWidth().offset(x = (-40.dp)),
+                text = "Pagamento",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+                textAlign = TextAlign.Center
+            )
+        }
         Spacer(modifier = Modifier.height(16.dp))
         Card(
             modifier = Modifier
@@ -86,7 +102,7 @@ fun PaymentScreen(navController: NavController) {
                     Column(
                         modifier = Modifier.fillMaxWidth(),
                         verticalArrangement = Arrangement.Center,
-                        horizontalAlignment = Alignment.CenterHorizontally
+                        horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
                         Text(
                             text = "Upload",
@@ -110,6 +126,33 @@ fun PaymentScreen(navController: NavController) {
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(10.dp))
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(300.dp),
+                    verticalArrangement = Arrangement.Bottom,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ){
+                    Button(
+                        onClick = { /*TODO*/ },
+                        modifier = Modifier
+                            .width(219.dp)
+                            .height(40.dp),
+                        shape = RoundedCornerShape(1.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xffEC6666)),
+                    )
+                    {
+                        Text(
+                            text = "Enviar",
+                            fontSize = 20.sp,
+                            fontWeight = FontWeight.W500,
+                            color = Color.White,
+                            textAlign = TextAlign.Center,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                    }
+                }
             }
         }
     }
