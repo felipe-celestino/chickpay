@@ -29,12 +29,12 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val navController = rememberNavController()
-                    NavHost(navController = navController, startDestination = "Home") {
+                    NavHost(navController = navController, startDestination = "Login") {
                         composable(route = "Login") {
                             LoginScreen(navController)
                         }
                         composable(route = "Cadastro") {
-                            CadastroScreen()
+                            CadastroScreen(navController)
                         }
                         composable(route = "Home") {
                             HomeScreen(navController)

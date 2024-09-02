@@ -61,7 +61,7 @@ fun HomeScreen(navController: NavController) {
         )
         Spacer(modifier = Modifier.height(6.dp))
         Text(
-            text = "Felipe Celestino",
+            text = "Nome do usuário",
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
             color = Color.Black
